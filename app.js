@@ -26,7 +26,7 @@ function deleteTodo(e) {
             e.target.parentElement.parentElement.remove();
         }, 400);
 
-        if (e.target.parentElement.parentElement.parentElement.className== "completed-todos") {
+        if (e.target.parentElement.parentElement.parentElement.id== "completed") {
             deleteCompletedTodoFromStorage(e.target.parentElement.parentElement.firstChild.textContent);
         }
         else {
